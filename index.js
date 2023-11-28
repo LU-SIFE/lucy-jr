@@ -2,7 +2,8 @@ const cron = require('node-cron');
 const fs = require('node:fs');
 const path = require('node:path');
 const { Client, GatewayIntentBits, ActivityType, channels, Collection, Events, Partials } = require('discord.js');
-const token = process.env['token'];
+const dotenv = require('dotenv').config();
+const token = process.env['CLIENT_TOKEN'];
 const quotestatus = require('./quotes.js');
 
 const client = new Client({

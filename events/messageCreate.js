@@ -53,9 +53,6 @@ module.exports = {
 
 
 const OpenAI = require('openai');
-const dotenv = require('dotenv');
-
-dotenv.config();
 const instructions = require('../instructions.js');
 
 const openai = new OpenAI({
